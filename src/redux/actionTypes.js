@@ -1,0 +1,48 @@
+export const LOGIN = "LOGIN";
+
+export const LOGOUT = "LOGOUT";
+
+export const LOGIN_INVALID = "LOGIN_INVALID";
+
+export const LOGIN_SUCCESSFUL = "LOGIN_SUCCESSFUL";
+
+export const REQUEST_ACCEPTED = "REQUEST_ACCEPTED";
+
+export const REQUEST_DENIED = "REQUEST_DENIED";
+
+
+export const LOGIN_ERROR = "LOGIN_ERROR";
+
+export const LOGIN_REQUESTED = "LOGIN_REQUESTED";
+
+export const UPDATE_MESSAGES = "UPDATE_MESSAGES";
+
+export const UPDATE_PARTICIPANTS = "UPDATE_PARTICIPANTS";
+
+export const REQUEST_TO_JOIN = "REQUEST_TO_JOIN";
+
+export const REGISTER = "LOGIN";
+
+export const REGISTER_REQUESTED = "REGISTER_REQUESTED";
+
+export const REGISTER_FAILED = "REGISTER_FAILED";
+
+export const REGISTER_SUCCESSFUL = "REGISTER_SUCCESSFUL";
+
+export const UPLOAD_FAIL = "UPLOAD_FAIL";
+
+export const OPEN_TUTORIAL = "OPEN_TUTORIAL";
+
+export const CLOSE_TUTORIAL = "CLOSE_TUTORIAL";
+
+
+
+
+
+
+
+
+
+
+
+

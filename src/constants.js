@@ -1,0 +1,19 @@
+
+export const LOGIN_STATUS = {
+    LOGGED_OUT : "LOGGED_OUT",
+    REQUESTED: "REQUESTED",
+    SUCCESSFUL: "SUCCESSFUL",
+    ERROR: "ERROR",
+    INVALID: "INVALID"
+  }
+  
+  export const REGISTER_STATUS = {
+    REQUESTED: "REQUESTED",
+    SUCCESSFUL: "SUCCESSFUL",
+    FAILED: "FAILED",
+  }
+  
+  
+  export const INVALID_LOGIN = -1;
+  export const MAX_PARTICIPANTS = 30;
+
