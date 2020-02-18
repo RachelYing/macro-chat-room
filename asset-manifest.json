@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/micro-chat-room/static/css/main.cfdbe4a3.chunk.css",
-    "main.js": "/micro-chat-room/static/js/main.a20631bf.chunk.js",
-    "main.js.map": "/micro-chat-room/static/js/main.a20631bf.chunk.js.map",
+    "main.js": "/micro-chat-room/static/js/main.6f784506.chunk.js",
+    "main.js.map": "/micro-chat-room/static/js/main.6f784506.chunk.js.map",
     "runtime~main.js": "/micro-chat-room/static/js/runtime~main.0138e6c0.js",
     "runtime~main.js.map": "/micro-chat-room/static/js/runtime~main.0138e6c0.js.map",
     "static/css/2.266e55a5.chunk.css": "/micro-chat-room/static/css/2.266e55a5.chunk.css",
     "static/js/2.a9d28690.chunk.js": "/micro-chat-room/static/js/2.a9d28690.chunk.js",
     "static/js/2.a9d28690.chunk.js.map": "/micro-chat-room/static/js/2.a9d28690.chunk.js.map",
     "index.html": "/micro-chat-room/index.html",
-    "precache-manifest.dd313ba9471a290a1f36d0c8e0b4fd51.js": "/micro-chat-room/precache-manifest.dd313ba9471a290a1f36d0c8e0b4fd51.js",
+    "precache-manifest.0eccca54fb2b5c3f19174810fe81a8e4.js": "/micro-chat-room/precache-manifest.0eccca54fb2b5c3f19174810fe81a8e4.js",
     "service-worker.js": "/micro-chat-room/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/micro-chat-room/static/css/2.266e55a5.chunk.css.map",
     "static/css/main.cfdbe4a3.chunk.css.map": "/micro-chat-room/static/css/main.cfdbe4a3.chunk.css.map",

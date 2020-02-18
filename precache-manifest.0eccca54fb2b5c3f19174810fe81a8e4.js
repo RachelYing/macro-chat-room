@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16231f88eda2bdd79ad3d45344ae6291",
+    "revision": "4e535fea3dff73cfb63c022356072a32",
     "url": "/micro-chat-room/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/micro-chat-room/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "db378ed5b9a21b0dd857",
+    "revision": "5fba4eda07fbe7437a84",
     "url": "/micro-chat-room/static/css/main.cfdbe4a3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/micro-chat-room/static/js/2.a9d28690.chunk.js"
   },
   {
-    "revision": "db378ed5b9a21b0dd857",
-    "url": "/micro-chat-room/static/js/main.a20631bf.chunk.js"
+    "revision": "5fba4eda07fbe7437a84",
+    "url": "/micro-chat-room/static/js/main.6f784506.chunk.js"
   },
   {
     "revision": "4d449baf703e5c885f1f",
