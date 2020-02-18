@@ -1,6 +1,6 @@
 {
-  "homepage": "https://RachelYing.github.io/micro_chat_room",
-  "name": "final_project",
+  "homepage": "https://RachelYing.github.io/micro-chat-room",
+  "name": "micro-chat-room",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
