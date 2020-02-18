@@ -7,15 +7,40 @@ import { LOGIN_STATUS } from "../constants";
 class Login extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             username: "",
             password: "",
-            invalidCredentials: false
+            invalidCredentials: false,
+            // 0:'login now', 1:'login successful', 2:'login fail'
+            fbLoginStatus:0,
+            fbLoginMessage:''
         }
+        this.getUserDetails = this.getUserDetails.bind(this);
 
         this.onFieldChange = this.onFieldChange.bind(this);
         this.login = this.login.bind(this);
+       
+    }
+
+    componentDidMount(){
+        window.fbAsyncInit = function() {
+            window.FB.init({
+              appId      : '2588066024852050',
+              cookie     : true,
+              xfbml      : true,
+              version    : 'v6.0'
+            });
+              
+            window.FB.AppEvents.logPageView();   
+        };
+          (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+          
     }
 
     onFieldChange(event) {
@@ -27,6 +52,24 @@ class Login extends Component {
 
     login() {
         this.props.validateLogin(this.state.username, this.state.password);
+    }
+
+    getUserDetails (){
+        console.log('button clicked');
+        window.FB.login(function(response) {
+            if (response.authResponse) {
+                console.log('Welcome!  Fetching your information.... ');
+             
+                window.FB.api('/me', function(response) {
+                    console.log(response)
+                    console.log('Good to see you, ' + response.name + '.');
+                    this.setState({fbLoginStatus: 1, fbLoginMessage:'Good to see you, ' + response.name + '.'});
+                }.bind(this));
+            } else {
+             console.log('User cancelled login or did not fully authorize.');
+            this.setState({fbLoginStatus: 2, fbLoginMessage: 'User cancelled login or did not fully authorize.'});
+            }
+        }.bind(this));
 
     }
 
@@ -66,6 +109,14 @@ class Login extends Component {
                     <Col className="text-right">
                         <Button onClick={this.login} variant={'secondary'}>Login</Button>
                     </Col>
+                </Row>
+                <Row>
+                  <button onClick={this.getUserDetails}>
+                    Facebook Login Button
+                </button>
+                </Row>
+                <Row>
+                {this.state.fbLoginMessage}
                 </Row>
             </Fragment>
         )
